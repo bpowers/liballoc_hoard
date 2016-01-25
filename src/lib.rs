@@ -1,6 +1,5 @@
 // Copyright 2015 The Rust Project Developers. See the COPYRIGHT
-// file at the top-level directory of this distribution and at
-// http://rust-lang.org/COPYRIGHT.
+// file at http://rust-lang.org/COPYRIGHT.
 //
 // Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
 // http://www.apache.org/licenses/LICENSE-2.0> or the MIT license
@@ -8,12 +7,12 @@
 // option. This file may not be copied, modified, or distributed
 // except according to those terms.
 //
-// Hoard is licensed under the GPLv2.
+// Hoard itself is licensed under the GPLv2.
 
 #![crate_name = "alloc_hoard"]
 #![crate_type = "rlib"]
 
-#![feature(allocator,no_std,libc)]
+#![feature(allocator,libc)]
 
 #![no_std]
 #![allocator]

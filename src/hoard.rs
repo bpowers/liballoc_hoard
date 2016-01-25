@@ -1,3 +1,13 @@
+// Copyright 2015 The Rust Project Developers. See the COPYRIGHT
+// file at http://rust-lang.org/COPYRIGHT.
+//
+// Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
+// http://www.apache.org/licenses/LICENSE-2.0> or the MIT license
+// <LICENSE-MIT or http://opensource.org/licenses/MIT>, at your
+// option. This file may not be copied, modified, or distributed
+// except according to those terms.
+//
+// Hoard itself is licensed under the GPLv2.
 
 extern crate libc;
 
@@ -8,9 +18,9 @@ use libc::{c_int, c_void, size_t};
 
 // Linkage directives to pull in hoard and its dependencies.
 //
-// On some platforms we need to be sure to link in `pthread` which jemalloc
+// On some platforms we need to be sure to link in `pthread` which Hoard
 // depends on, and specifically on android we need to also link to libgcc.
-// Currently jemalloc is compiled with gcc which will generate calls to
+// Currently Hoard is compiled with gcc which will generate calls to
 // intrinsics that are libgcc specific (e.g. those intrinsics aren't present in
 // libcompiler-rt), so link that in to get that support.
 #[link(name = "hoard", kind = "static")]

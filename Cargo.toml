@@ -3,6 +3,8 @@ name = "alloc_hoard"
 version = "0.1.0"
 authors = ["Bobby Powers <bobbypowers@gmail.com>"]
 build = "build.rs"
+license = "GPL-2.0/GPL-3.0/APACHE-2.0/MIT"
+keywords = ["allocator", "Hoard"]
 
 [dependencies]
 
