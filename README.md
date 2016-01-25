@@ -1,8 +1,15 @@
 liballoc_hoard - Use Hoard as rust's allocator
 ==============================================
 
-This library allows users to use Hoard instead of either jemalloc or
+This library allows users to use [Hoard](http://www.hoard.org/)
+instead of either [jemalloc](http://www.canonware.com/jemalloc/) or
 libc's malloc when building rust binaries and shared libraries.
+
+Additional crate information is available
+[here](https://crates.io/crates/alloc_hoard/), and the idea behind
+this library is the [Custom
+Allocotors](https://doc.rust-lang.org/book/custom-allocators.html)
+section of the Rust book.
 
 Usage
 -----
