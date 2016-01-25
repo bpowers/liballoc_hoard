@@ -5,6 +5,7 @@ authors = ["Bobby Powers <bobbypowers@gmail.com>"]
 build = "build.rs"
 license = "GPL-2.0/GPL-3.0/APACHE-2.0/MIT"
 keywords = ["allocator", "Hoard"]
+repository = "https://github.com/bpowers/liballoc_hoard"
 
 [dependencies]
 
