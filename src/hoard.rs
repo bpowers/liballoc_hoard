@@ -23,7 +23,6 @@ use libc::{c_int, c_void, size_t};
 // Currently Hoard is compiled with gcc which will generate calls to
 // intrinsics that are libgcc specific (e.g. those intrinsics aren't present in
 // libcompiler-rt), so link that in to get that support.
-#[link(name = "hoard", kind = "static")]
 #[cfg_attr(target_os = "android", link(name = "gcc"))]
 #[cfg_attr(all(not(windows),
                not(target_os = "android"),
