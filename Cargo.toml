@@ -1,6 +1,6 @@
 [package]
 name = "alloc_hoard"
-version = "0.2.0"
+version = "0.3.0"
 description = "use Hoard as rust's allocator"
 authors = ["Bobby Powers <bobbypowers@gmail.com>"]
 build = "build.rs"

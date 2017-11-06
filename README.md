@@ -16,7 +16,7 @@ Usage
 
 Simply add
 
-    alloc_hoard = "0.1"
+    alloc_hoard = "0.3"
 
 To the dependencies of your crate in a project's `Cargo.toml` file,
 and then in a library or program add:
