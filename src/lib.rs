@@ -12,14 +12,15 @@
 #![crate_name = "alloc_hoard"]
 #![crate_type = "rlib"]
 
-#![feature(allocator,libc)]
+#![feature(alloc)]
+#![feature(libc)]
 
 #![no_std]
-#![allocator]
 
 
 mod hoard;
 
+extern crate alloc;
 extern crate libc;
 
 
