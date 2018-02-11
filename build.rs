@@ -11,7 +11,7 @@ extern crate gcc;
 fn main() {
     gcc::Build::new()
 	.cpp(true)
-	.flag("-std=c++11")
+	.flag("-std=c++14")
 	.flag("-fno-builtin-malloc")
 	.flag("-Bsymbolic")
         .define("NDEBUG", None)
@@ -22,9 +22,9 @@ fn main() {
         .include("./Hoard/src/include/util")
         .include("./Hoard/src/include/hoard")
         .include("./Hoard/src/include/superblocks")
-        .include("./Hoard/src/Heap-Layers")
+        .include("./Heap-Layers")
         .file("Hoard/src/source/libhoard.cpp")
 	.file("Hoard/src/source/unixtls.cpp")
-	.file("Hoard/src/Heap-Layers/wrappers/gnuwrapper.cpp")
+	.file("Heap-Layers/wrappers/gnuwrapper.cpp")
         .compile("libhoard.a");
 }
