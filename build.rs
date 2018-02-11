@@ -9,7 +9,7 @@
 extern crate gcc;
 
 fn main() {
-    gcc::Config::new()
+    gcc::Build::new()
 	.cpp(true)
 	.flag("-std=c++11")
 	.flag("-fno-builtin-malloc")
