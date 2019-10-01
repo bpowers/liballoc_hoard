@@ -12,9 +12,6 @@
 #![crate_name = "alloc_hoard"]
 #![crate_type = "rlib"]
 
-#![feature(alloc)]
-#![feature(libc)]
-
 #![no_std]
 
 
