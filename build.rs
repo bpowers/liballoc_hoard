@@ -23,6 +23,7 @@ fn main() {
         .include("./Hoard/src/include/hoard")
         .include("./Hoard/src/include/superblocks")
         .include("./Heap-Layers")
+        .include("./")
         .file("Hoard/src/source/libhoard.cpp")
 	.file("Hoard/src/source/unixtls.cpp")
 	.file("Heap-Layers/wrappers/gnuwrapper.cpp")
